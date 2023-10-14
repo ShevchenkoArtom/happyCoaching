@@ -1,0 +1,13 @@
+.footer {
+    &__container {
+        @include container;
+    }
+    &__top {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 30px 64px;
+    }
+    &__logo svg{
+        margin-bottom: 32px;
+    }
+}

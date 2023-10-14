@@ -1,0 +1,46 @@
+// COLOR
+$white: #fff;
+$offWhite: #F9FAFB;
+$darkBlue: #0C111D;
+$brandColor: #483D8B;
+$purple400: #7567CA;
+$purple200: #C0B9EC;
+$complementary600: #20AD96;
+$complementary200: #d5f7f2;
+
+$gray: #4A556C;
+
+
+$transition: .2s all ease;
+
+
+@mixin container {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@mixin fz15 {
+    color: $gray;
+    text-align: right;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: -0.3px;
+}
+
+@mixin btnGreen{
+    padding: 11px 16px;
+    border-radius: 10px;
+    color: $white;
+    background-color: $complementary600;
+    border: 1px solid $complementary600;
+    transition: $transition;
+    span {
+        font-weight: 700;
+    }
+    &:hover {
+        background-color: transparent;
+        color: $complementary600;
+    }
+}

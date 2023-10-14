@@ -1,0 +1,41 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    &__container {
+        @include container;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    &__nav {
+        &-list {
+            display: flex;
+            gap: 0px 30px;
+            align-items: center;
+            li a {
+                @include fz15;
+                transition: $transition;
+                &:hover {
+                    color: $complementary600;
+                }
+            }
+            .button-green {
+                @include btnGreen;
+            }
+        }
+    }
+}
+.header__nav-link_active {
+    font-weight: 700;
+}
+main {
+    margin-top: 60px;
+}
